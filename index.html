@@ -323,6 +323,22 @@
             font-weight: bold;
         }
         
+        .gift-icon {
+            display: inline-block;
+            animation: swing 2s infinite ease-in-out;
+            font-size: 24px;
+            transform-origin: top center;
+            margin: 0 5px;
+            }
+
+            @keyframes swing {
+            0%   { transform: rotate(0deg); }
+            25%  { transform: rotate(15deg); }
+            50%  { transform: rotate(-15deg); }
+            75%  { transform: rotate(10deg); }
+            100% { transform: rotate(0deg); }
+            }
+        
         .cta-button {
             background: #6d8e85;
             background: -webkit-linear-gradient(45deg, #6d8e85, #525f62);
@@ -707,7 +723,7 @@
             <div class="sparkle" style="bottom: 80px; left: 50px; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; animation-delay: 1s;"></div>
             <div class="sparkle" style="bottom: 120px; right: 30px; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;"></div>
             
-            <h1 class="title">🎉 تسوّقي بأكثر من 5000 ريال وخذي <span style="color:brown;" class="cta-buttonM">هديتكِ</span> "أظافر صناعية أنيقة" 🎁</h1>
+            <h1 class="title">🎉 تسوّقي بأكثر من 5000 ريال وخذي <span style="color:brown;" class="cta-buttonM">هديتكِ</span> "أظافر صناعية أنيقة" <span class="gift-icon">🎁</span></h1>
             
             <img src="https://i.ibb.co/qYG530kx/g.jpg" alt="" class="surprise-image glow">
             
@@ -721,17 +737,17 @@
             </a>
         </div>
         
-    <a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
-        <div class="footer">
-            <p style="color: #6d8e85; font-weight: 600;">كايا ستور Kaya Store</p>
-            <div class="social-icons" style="margin-top: 15px;">
-                <img src="tiktok.png" alt="TikTok">
-                <img src="instagram.png" alt="Instagram">
-                <img src="whatsapp.png" alt="WhatsApp">
-                <img src="facebook.png" alt="Facebook">
+        <a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
+            <div class="footer">
+                <p style="color: #6d8e85; font-weight: 600;">كايا ستور Kaya Store</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <img src="tiktok.png" alt="TikTok">
+                    <img src="instagram.png" alt="Instagram">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                    <img src="facebook.png" alt="Facebook">
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
     </div>
 
     <script>
