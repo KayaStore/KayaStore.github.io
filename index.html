@@ -184,6 +184,7 @@
             -moz-border-radius: 30px;
             border-radius: 30px;
             padding: 40px 30px;
+            padding-bottom: 10px;
             -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
@@ -331,6 +332,7 @@
             color: white;
             border: none;
             padding: 15px 40px;
+            margin-top: 0px;
             font-size: 1.2rem;
             font-weight: 600;
             -webkit-border-radius: 50px;
@@ -419,7 +421,7 @@
         }
         
         .footer {
-            margin-top: 40px;
+            margin-top: 20px;
             padding: 20px;
             color: #525f62;
             font-size: 1.2rem;
@@ -431,8 +433,9 @@
             width: 70%;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
         }
-        
+
         .footer a {
             color: #6d8e85;
             text-decoration: none;
@@ -442,9 +445,22 @@
             -o-transition: color 0.3s ease;
             transition: color 0.3s ease;
         }
-        
+
         .footer a:hover {
             color: #525f62;
+        }
+
+        .footer img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+
+        .footer-wrapper {
+            display: block;
+            text-decoration: none;
+            color: inherit;
         }
         
         .heart {
@@ -539,6 +555,7 @@
             .main-content {
                 padding: 30px 20px;
                 margin: 10px auto;
+                padding-bottom: 10px;
             }
             
             .title {
@@ -567,6 +584,13 @@
             .cta-button {
                 padding: 12px 30px;
                 font-size: 1.1rem;
+                margin-top: 0px;
+            }
+
+            .main-content {
+                padding: 30px 20px;
+                margin: 10px auto;
+                padding-bottom: 10px;
             }
             
             .surprise-image {
@@ -697,26 +721,17 @@
             </a>
         </div>
         
-<div class="footer"> 
-    <p>
-        <a href="https://linktr.ee/Kaya.Store" target="_blank">كايا ستور Kaya Store</a>
-    </p>
-    <div class="social-icons" style="margin-top: 15px;">
-
-        <a href="https://linktr.ee/kaya.store" target="_blank" style="margin: 0 5px;">
-            <img src="tiktok.png" alt="TikTok" style="width: 24px; height: 24px;">
-        </a>
-        <a href="https://linktr.ee/kaya.store" target="_blank" style="margin: 0 5px;">
-            <img src="instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
-        </a>
-        <a href="https://linktr.ee/kaya.store" target="_blank" style="margin: 0 5px;">
-            <img src="whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
-        </a>
-        <a href="https://linktr.ee/kaya.store" target="_blank" style="margin: 0 5px;">
-            <img src="facebook.png" alt="Facebook" style="width: 24px; height: 24px;">
-        </a>
-    </div>
-</div>
+    <a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
+        <div class="footer">
+            <p style="color: #6d8e85; font-weight: 600;">كايا ستور Kaya Store</p>
+            <div class="social-icons" style="margin-top: 15px;">
+                <img src="tiktok.png" alt="TikTok">
+                <img src="instagram.png" alt="Instagram">
+                <img src="whatsapp.png" alt="WhatsApp">
+                <img src="facebook.png" alt="Facebook">
+            </div>
+        </div>
+    </a>
     </div>
 
     <script>
