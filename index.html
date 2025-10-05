@@ -77,7 +77,7 @@
         
         .container {
             max-width: 100%;
-            padding-top: 60%;
+            padding-top: 50vh;
             text-align: center;
             position: relative;
             z-index: 10;
@@ -567,7 +567,7 @@
         
         @media screen and (max-width: 768px) {
             .container {
-                padding-top: 60%;
+                padding-top: 50vh;
             }
             
             .main-content {
@@ -701,10 +701,10 @@
     
     <div class="container">
         <div class="main-content loading">
-            <div class="sparkle" style="top: 20px; left: 30px; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; animation-delay: 0s;"></div>
+            <!-- <div class="sparkle" style="top: 20px; left: 30px; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; animation-delay: 0s;"></div>
             <div class="sparkle" style="top: 50px; right: 40px; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; -o-animation-delay: 0.5s; animation-delay: 0.5s;"></div>
             <div class="sparkle" style="bottom: 80px; left: 50px; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; animation-delay: 1s;"></div>
-            <div class="sparkle" style="bottom: 120px; right: 30px; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;"></div>
+            <div class="sparkle" style="bottom: 120px; right: 30px; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;"></div> -->
             
             <!-- <h1 class="title">🎉 تسوّقي بأكثر من 5000 ريال وخذي <span style="color:brown;" class="cta-buttonM">هديتكِ<span class="gift-icon">🎁</span></span> "أظافر صناعية أنيقة"</h1>
             
@@ -734,43 +734,43 @@
     </div>
 
     <script>
-        function createConfetti() {
-            var colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#ff8b94', '#95e1d3', '#6d8e85', '#525f62'];
-            var confettiContainer = document.body;
+        // function createConfetti() {
+        //     var colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#ff8b94', '#95e1d3', '#6d8e85', '#525f62'];
+        //     var confettiContainer = document.body;
             
-            var confetti = document.createElement('div');
-            confetti.className = 'confetti';
-            confetti.style.left = Math.random() * 100 + '%';
-            confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-            confetti.style.animationDelay = '0s';
-            confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
-            confettiContainer.appendChild(confetti);
+        //     var confetti = document.createElement('div');
+        //     confetti.className = 'confetti';
+        //     confetti.style.left = Math.random() * 100 + '%';
+        //     confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+        //     confetti.style.animationDelay = '0s';
+        //     confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        //     confettiContainer.appendChild(confetti);
             
-            setTimeout(function() {
-                if (confetti.parentNode) {
-                    confetti.parentNode.removeChild(confetti);
-                }
-            }, 4000);
-        }
+        //     setTimeout(function() {
+        //         if (confetti.parentNode) {
+        //             confetti.parentNode.removeChild(confetti);
+        //         }
+        //     }, 4000);
+        // }
         
-        function startConfetti() {
-            createConfetti();
-            setTimeout(startConfetti, Math.random() * 100 + 50);
-        }
+        // function startConfetti() {
+        //     createConfetti();
+        //     setTimeout(startConfetti, Math.random() * 100 + 50);
+        // }
         
-        function addSparkles() {
-            var mainContent = document.querySelector('.main-content');
-            var sparkleCount = 8;
+        // function addSparkles() {
+        //     var mainContent = document.querySelector('.main-content');
+        //     var sparkleCount = 8;
             
-            for (var i = 0; i < sparkleCount; i++) {
-                var sparkle = document.createElement('div');
-                sparkle.className = 'sparkle';
-                sparkle.style.left = Math.random() * 100 + '%';
-                sparkle.style.top = Math.random() * 100 + '%';
-                sparkle.style.animationDelay = Math.random() * 2 + 's';
-                mainContent.appendChild(sparkle);
-            }
-        }
+        //     for (var i = 0; i < sparkleCount; i++) {
+        //         var sparkle = document.createElement('div');
+        //         sparkle.className = 'sparkle';
+        //         sparkle.style.left = Math.random() * 100 + '%';
+        //         sparkle.style.top = Math.random() * 100 + '%';
+        //         sparkle.style.animationDelay = Math.random() * 2 + 's';
+        //         mainContent.appendChild(sparkle);
+        //     }
+        // }
         
         function handleButtonClick() {
             var button = document.querySelector('.cta-button');
