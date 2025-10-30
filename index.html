@@ -799,17 +799,17 @@
                 للذهاب إلى تفاصيل المنتجات، اضغطي على الزر الموجود في الأسفل 👇
             </div> -->
             
-            <a href="rd.html" class="cta-button">
-                <i class="fab fa-whatsapp"></i>
-                <span class="cta-text">أضغط هنا للذهاب إلى الكتالوج</span>
-				<!-- <span class="cta-text">جاري الذهاب إلى الكتالوج</span> -->
-                <!-- <span class="svg-spin">
-                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="ring" cx="25" cy="25" r="20"></circle>
-                        <path class="arc" d="M45 25 A20 20 0 0 1 25 45" stroke-linecap="round"></path>
-                    </svg>
-                </span> -->
-            </a>
+		<a class="cta-button" onclick="umami.track('go_to_catalog'); setTimeout(() => { window.location.href='rd.html'; }, 1000);">
+		    <i class="fab fa-whatsapp"></i>
+		    <span class="cta-text">أضغط هنا للذهاب إلى الكتالوج</span>
+		    <!-- <span class="cta-text">جاري الذهاب إلى الكتالوج</span> -->
+		    <!-- <span class="svg-spin">
+		        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+		            <circle class="ring" cx="25" cy="25" r="20"></circle>
+		            <path class="arc" d="M45 25 A20 20 0 0 1 25 45" stroke-linecap="round"></path>
+		        </svg>
+		    </span> -->
+		</a>
         </div>
         
         <a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
