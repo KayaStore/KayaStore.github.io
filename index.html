@@ -785,54 +785,68 @@
     <div class="confetti" style="left: 95%;"></div> -->
 	
     <div class="container">
-        <div class="main-content loading">
-            <!-- <div class="sparkle" style="top: 20px; left: 30px; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; animation-delay: 0s;"></div>
-            <div class="sparkle" style="top: 50px; right: 40px; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; -o-animation-delay: 0.5s; animation-delay: 0.5s;"></div>
-            <div class="sparkle" style="bottom: 80px; left: 50px; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; animation-delay: 1s;"></div>
-            <div class="sparkle" style="bottom: 120px; right: 30px; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;"></div> -->
-            
-            <!-- <h1 class="title">🎉 تسوّقي بأكثر من 5000 ريال وخذي <span style="color:brown;" class="cta-buttonM">هديتكِ<span class="gift-icon">🎁</span></span> "أظافر صناعية أنيقة"</h1>
-            
-            <img src="https://i.ibb.co/qYG530kx/g.jpg" alt="" class="surprise-image glow">
-            
-            <div class="description">
-                للذهاب إلى تفاصيل المنتجات، اضغطي على الزر الموجود في الأسفل 👇
-            </div> -->
-            
-		<a class="cta-button" onclick="
-		    event.preventDefault();
-		    if (typeof umami === 'undefined') {
-		        window.location.href='rd.html';
-		    } else {
-		        umami.track('go_to_catalog');
-		        setTimeout(() => { window.location.href='rd.html'; }, 1000);
-		    }
-		">
-		    <i class="fab fa-whatsapp"></i>
-		    <!-- <span class="cta-text">أضغط هنا للذهاب إلى الكتالوج</span> -->
-		    <span class="cta-text">جاري الذهاب إلى الكتالوج</span>
-			<br>
-		    <span class="svg-spin">
-		        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-		            <circle class="ring" cx="25" cy="25" r="20"></circle>
-		            <path class="arc" d="M45 25 A20 20 0 0 1 25 45" stroke-linecap="round"></path>
-		        </svg>
-		    </span>
+		<div class="main-content loading">
+		    <!-- <div class="sparkle" style="top: 20px; left: 30px; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; animation-delay: 0s;"></div>
+		    <div class="sparkle" style="top: 50px; right: 40px; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; -o-animation-delay: 0.5s; animation-delay: 0.5s;"></div>
+		    <div class="sparkle" style="bottom: 80px; left: 50px; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; animation-delay: 1s;"></div>
+		    <div class="sparkle" style="bottom: 120px; right: 30px; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;"></div> -->
+		    
+		    <!-- <h1 class="title">🎉 تسوّقي بأكثر من 5000 ريال وخذي <span style="color:brown;" class="cta-buttonM">هديتكِ<span class="gift-icon">🎁</span></span> "أظافر صناعية أنيقة"</h1>
+		    
+		    <img src="https://i.ibb.co/qYG530kx/g.jpg" alt="" class="surprise-image glow">
+		    
+		    <div class="description">
+		        للذهاب إلى تفاصيل المنتجات، اضغطي على الزر الموجود في الأسفل 👇
+		    </div> -->
+		    
+		    <a class="cta-button" onclick="
+		        event.preventDefault();
+		        const redirect = () => { window.location.href='rd.html'; };
+		        if (typeof umami === 'undefined') {
+		            redirect();
+		        } else {
+		            umami.track('go_to_catalog');
+		            setTimeout(redirect, 1000);
+		        }
+		        setTimeout(() => { document.getElementById('fallbackMessage').style.display = 'block'; }, 5000);
+		    ">
+		        <i class="fab fa-whatsapp"></i>
+		        <!-- <span class="cta-text">أضغط هنا للذهاب إلى الكتالوج</span> -->
+		        <span class="cta-text">جاري الذهاب إلى الكتالوج</span>
+		        <br>
+		        <span class="svg-spin">
+		            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+		                <circle class="ring" cx="25" cy="25" r="20"></circle>
+		                <path class="arc" d="M45 25 A20 20 0 0 1 25 45" stroke-linecap="round"></path>
+		            </svg>
+		        </span>
+		    </a>
+		
+		    <div id="fallbackMessage" style="display:none; margin-top:10px;">
+		        <a class="cta-button" onclick="
+		            event.preventDefault();
+		            const redirect = () => { window.location.href='rd.html'; };
+		            if (typeof umami === 'undefined') {
+		                redirect();
+		            } else {
+		                umami.track('go_to_catalog');
+		                setTimeout(redirect, 1000);
+		            }
+		        ">أضغط هنا إذا لم يتم تحويلك للكتالوج تلقائياً</a>
+		    </div>
+		</div>
+		
+		<a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
+		    <div class="footer">
+		        <p style="color: #6d8e85; font-weight: 600;">كايا ستور Kaya Store</p>
+		        <div class="social-icons" style="margin-top: 15px;">
+		            <img src="tiktok.png" alt="TikTok">
+		            <img src="instagram.png" alt="Instagram">
+		            <img src="whatsapp.png" alt="WhatsApp">
+		            <img src="facebook.png" alt="Facebook">
+		        </div>
+		    </div>
 		</a>
-			
-        </div>
-        
-        <a href="https://linktr.ee/Kaya.Store" target="_blank" class="footer-wrapper">
-            <div class="footer">
-                <p style="color: #6d8e85; font-weight: 600;">كايا ستور Kaya Store</p>
-                <div class="social-icons" style="margin-top: 15px;">
-                    <img src="tiktok.png" alt="TikTok">
-                    <img src="instagram.png" alt="Instagram">
-                    <img src="whatsapp.png" alt="WhatsApp">
-                    <img src="facebook.png" alt="Facebook">
-                </div>
-            </div>
-        </a>
     </div>
 
     <script>
